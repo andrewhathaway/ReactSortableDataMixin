@@ -1,0 +1,14 @@
+{
+  "name": "react-sortable-data-mixin",
+  "version": "0.1.0",
+  "description": "A React JS Mixin for sorting data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrew Hathaway <andrew@andrewhathaway.net>",
+  "license": "BSD",
+  "dependencies": {
+    "lodash": "~2.4.1"
+  }
+}
