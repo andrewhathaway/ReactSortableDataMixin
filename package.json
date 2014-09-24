@@ -1,7 +1,7 @@
 {
   "name": "react-sortable-data-mixin",
   "version": "0.0.1",
-  "description": "A React JS Mixin for sorting data",
+  "description": "A simple and easy ReactJS mixin to easily sort your data",
   "homepage": "https://github.com/AndrewHathaway/ReactSortableDataMixin",
   "main": "src/ReactSortableDataMixin.js",
   "author": {

@@ -1,5 +1,5 @@
 /*
- * ReactSortableDataMixin - React JS Mixin to sort through data
+ * ReactSortableDataMixin - A simple and easy ReactJS mixin to easily sort your data
  *
  * Copyright (c) 2014 Andrew Hathaway, https://github.com/AndrewHathaway/ReactSortableDataMixin
  *
