@@ -34,7 +34,7 @@ var Component = React.createClass({
           dob  : '1994-09-01'
         },
         {
-          name : 'Andrew Hathaway',
+          name : 'Michael Wright',
           age  : 24,
           dob  : '1990-04-21'
         }
