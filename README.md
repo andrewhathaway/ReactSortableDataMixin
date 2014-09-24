@@ -5,6 +5,7 @@
 [Follow me on Twitter](http://twitter.com/andrewhathaway)
 
 ## To do
+ * Add examples and usage
  * Add testing
  * Add more sorting methods
 
