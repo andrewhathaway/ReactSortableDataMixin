@@ -1,14 +1,16 @@
 {
   "name": "react-sortable-data-mixin",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "A React JS Mixin for sorting data",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "homepage": "https://github.com/AndrewHathaway/ReactSortableDataMixin",
+  "main": "src/ReactSortableDataMixin.js",
+  "author": {
+    "name": "Andrew Hathaway",
+    "email": "andrew@andrewhathaway.net"
   },
-  "author": "Andrew Hathaway <andrew@andrewhathaway.net>",
-  "license": "BSD",
-  "dependencies": {
-    "lodash": "~2.4.1"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:AndrewHathaway/ReactSortableDataMixin.git"
+  },
+  "license": "MIT"
 }
