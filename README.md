@@ -60,9 +60,9 @@ var Component = React.createClass({
         <table>
           <thead>
             <tr>
-              <th onClick={this.sortData(null, 'name')}>Name</th>
-              <th onClick={this.sortData(null, 'age')}>Age</th>
-              <th onClick={this.sortData(null, 'dob')}>D.O.B</th>
+              <th onClick={this.sortData.bind(null, 'name')}>Name</th>
+              <th onClick={this.sortData.bind(null, 'age')}>Age</th>
+              <th onClick={this.sortData.bind(null, 'dob')}>D.O.B</th>
             </tr>
           </thead>
           <tbody>
