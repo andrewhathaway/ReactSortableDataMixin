@@ -6,7 +6,8 @@
 
 ## Usage
 
-Say we have the following data being sent in props to the component below.
+Say we have the data being set on a components state like below. We bind
+the `sortData` event handler and pass the fields name. Your data will be sorted though the correct-types method and reset on the state.
 
 ```Javascript
 var SortableDataMixin = require('sortable-data-mixin');
