@@ -8,72 +8,72 @@
 
 Say we have the following data being sent in props to the component below.
 
-    ```Javascript
-    var SortableDataMixin = require('sortable-data-mixin');
+```Javascript
+var SortableDataMixin = require('sortable-data-mixin');
 
-    var Component = React.createClass({
-      mixins : [SortableDataMixin],
+var Component = React.createClass({
+  mixins : [SortableDataMixin],
 
-      sortableFields : {
-        name : 'text',
-        age  : 'number',
-        dob  : 'date'
-      },
+  sortableFields : {
+    name : 'text',
+    age  : 'number',
+    dob  : 'date'
+  },
 
-      getInitialState : function() {
-        return {
-          data : [
-            {
-              name : 'Andrew Hathaway',
-              age  : 18,
-              dob  : '1996-02-27'
-            },
-            {
-              name : 'Jordan Appleson',
-              age  : 20,
-              dob  : '1994-09-01'
-            },
-            {
-              name : 'Andrew Hathaway',
-              age  : 24,
-              dob  : '1990-04-21'
-            }
-          ]
-        };
-      },
-
-      render : function() {
-        var rows;
-        for (var i = 0; i < this.state.data.length; i++) {
-          var item = this.state.data[i];
-
-          rows.push(
-            <tr>
-              <td>{item.name}</td>
-              <td>{item.age}</td>
-              <td>{item.dob}</td>
-            </tr>
-          );
+  getInitialState : function() {
+    return {
+      data : [
+        {
+          name : 'Andrew Hathaway',
+          age  : 18,
+          dob  : '1996-02-27'
+        },
+        {
+          name : 'Jordan Appleson',
+          age  : 20,
+          dob  : '1994-09-01'
+        },
+        {
+          name : 'Andrew Hathaway',
+          age  : 24,
+          dob  : '1990-04-21'
         }
+      ]
+    };
+  },
 
-        return (
-            <table>
-              <thead>
-                <tr>
-                  <th onClick={this.sortData(null, 'name')}>Name</th>
-                  <th onClick={this.sortData(null, 'age')}>Age</th>
-                  <th onClick={this.sortData(null, 'dob')}>D.O.B</th>
-                </tr>
-              </thead>
-              <tbody>
-                {rows}
-              </tbody>
-            </table>
-        );
-      }
+  render : function() {
+    var rows;
+    for (var i = 0; i < this.state.data.length; i++) {
+      var item = this.state.data[i];
 
-    });
-    ```
+      rows.push(
+        <tr>
+          <td>{item.name}</td>
+          <td>{item.age}</td>
+          <td>{item.dob}</td>
+        </tr>
+      );
+    }
+
+    return (
+        <table>
+          <thead>
+            <tr>
+              <th onClick={this.sortData(null, 'name')}>Name</th>
+              <th onClick={this.sortData(null, 'age')}>Age</th>
+              <th onClick={this.sortData(null, 'dob')}>D.O.B</th>
+            </tr>
+          </thead>
+          <tbody>
+            {rows}
+          </tbody>
+        </table>
+    );
+  }
+
+});
+```
 
 
 ## To do
