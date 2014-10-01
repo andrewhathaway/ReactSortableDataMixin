@@ -152,6 +152,14 @@ var SortableDataMixin = {
       });
 
       return data;
+    },
+
+    percentage : function(data, field) {
+      data.sort(function(a, b) {
+        return parseFloat(a[field]) - parseFloat(b[field]);
+      });
+
+      return data;
     }
   }
 
