@@ -10,7 +10,7 @@ Say we have the data being set on a components state like below. We bind
 the `sortData` event handler and pass the fields name. Your data will be sorted though the correct-types method and reset on the state.
 
 ```Javascript
-var SortableDataMixin = require('sortable-data-mixin');
+var SortableDataMixin = require('react-sortable-data-mixin');
 
 var Component = React.createClass({
   mixins : [SortableDataMixin],
