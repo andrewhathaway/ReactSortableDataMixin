@@ -16,28 +16,32 @@ var Component = React.createClass({
   mixins : [SortableDataMixin],
 
   sortableFields : {
-    name : 'text',
-    age  : 'number',
-    dob  : 'date'
+    name  : 'text',
+    age   : 'number',
+    dob   : 'date',
+    score : 'percentage'
   },
 
   getInitialState : function() {
     return {
       data : [
         {
-          name : 'Andrew Hathaway',
-          age  : 18,
-          dob  : '1996-02-27'
+          name  : 'Andrew Hathaway',
+          age   : 18,
+          dob   : '1996-02-27',
+          score : '99%'
         },
         {
-          name : 'Jordan Appleson',
-          age  : 20,
-          dob  : '1994-09-01'
+          name  : 'Michael Wright',
+          age   : 24,
+          dob   : '1990-04-21',
+          score : '24%'
         },
         {
-          name : 'Michael Wright',
-          age  : 24,
-          dob  : '1990-04-21'
+          name  : 'Jordan Appleson',
+          age   : 20,
+          dob   : '1994-09-01',
+          score : '50%'
         }
       ]
     };
@@ -53,6 +57,7 @@ var Component = React.createClass({
           <td>{item.name}</td>
           <td>{item.age}</td>
           <td>{item.dob}</td>
+          <td>{item.score}</td>
         </tr>
       );
     }
@@ -64,6 +69,7 @@ var Component = React.createClass({
               <th onClick={this.sortData.bind(null, 'name')}>Name</th>
               <th onClick={this.sortData.bind(null, 'age')}>Age</th>
               <th onClick={this.sortData.bind(null, 'dob')}>D.O.B</th>
+              <th onClick={this.sortData.bind(null, 'score')}>Score</th>
             </tr>
           </thead>
           <tbody>
