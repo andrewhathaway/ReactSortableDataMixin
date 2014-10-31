@@ -8,6 +8,9 @@
     "name": "Andrew Hathaway",
     "email": "andrew@andrewhathaway.net"
   },
+  "keywords" : [
+    "react-component"
+  ],
   "repository": {
     "type": "git",
     "url": "git@github.com:AndrewHathaway/ReactSortableDataMixin.git"
