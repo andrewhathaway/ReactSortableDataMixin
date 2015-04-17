@@ -69,7 +69,13 @@ var SortableDataMixin = {
     this.lastSorted = field;
     this.setState({
       data : sortedData
-    }, callback);
+    }, function() {
+      if (!callback) {
+        return;
+      }
+
+      callback(sortedData);
+    });
   },
 
   /**
