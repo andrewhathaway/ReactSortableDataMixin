@@ -40,7 +40,7 @@ var SortableDataMixin = {
    *
    * @param  String field Field to sort by
    */
-  sortData : function(field) {
+  sortData : function(field, callback) {
     if (typeof field !== 'string') {
       console.warn('String field names must be passed.');
       return;
@@ -69,7 +69,7 @@ var SortableDataMixin = {
     this.lastSorted = field;
     this.setState({
       data : sortedData
-    });
+    }, callback);
   },
 
   /**
